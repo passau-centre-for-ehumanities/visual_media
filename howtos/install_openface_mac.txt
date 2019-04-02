@@ -1,0 +1,4 @@
+Draft documentation for installing openface on mac based on Scott, Marielle and Kristen installing it Saturday morning. 
+Am working on updating these so they are more robust.
+
+https://docs.google.com/document/d/1Fg5gF7IrQqknpdrTNAvIkL2DxH_ztGtRcv__CEhRFJQ/edit?usp=sharing
