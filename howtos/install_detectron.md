@@ -1,6 +1,6 @@
 # Detectron-Installation
 
-**Before you consider installing Detectron, it is important to keep in mind, that you will need a powerfull Nividia Graficcard with at least 8 gb RAM (better 12) to make it work.**
+**Before you consider installing Detectron, it is important to keep in mind, that you will need a powerful Nvidia GPU with at least 8 GB of video memory (better 12) to make it work.**
 
 This instructions are for an Installation of Detectron under Ubuntu 18.04. It should also work for any other Linux-distribution. Windows and Mac-systems are not supported.
 
@@ -10,7 +10,7 @@ For a proper installation of Cuda (I installed Cuda 10.0), go tu the [Nvidia Web
 
 ## Second step:
 install Caffe2
-Caffe2 is now included in pytorch. There is also an anaconda and pip package, yet we always installe pytorch from source. The source can be found [here](https://github.com/pytorch/pytorch#from-source).
+Caffe2 is now included in pytorch. There is also an anaconda and pip package, yet we always install pytorch from source. The source can be found [here](https://github.com/pytorch/pytorch#from-source).
 
 Please ensure that your Caffe2 installation was successful before proceeding by running the following commands and checking their output as directed in the comments.
 
@@ -36,12 +36,12 @@ make install
 # not to install the COCO API into global site-packages
 python setup.py install --user
 ```
-## FoDetectron
+## For Detectron
 
 Clone the Detectron repository:
 
 ```
-git clone https://github.com/facebookresearch/detectron $DETECTRON
+git clone https://github.com/facebookresearch/detectron detectron
 ```
 
 Install Python dependencies:
@@ -60,11 +60,11 @@ make
 Check that Detectron tests pass (e.g. for [`SpatialNarrowAsOp test`](detectron/tests/test_spatial_narrow_as_op.py)):
 
 ```
-python $DETECTRON/detectron/tests/test_spatial_narrow_as_op.py
+python detectron/tests/test_spatial_narrow_as_op.py
 ```
 
 make sure to set pythonpath on detectron before using it:
 ```
-export PYTHONPATH=/home/administrator/Detectron/
+export PYTHONPATH=.../detectron
 ```
 
