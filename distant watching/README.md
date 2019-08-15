@@ -44,3 +44,20 @@ After creating the training corpus, you need to add them to the Detectron datase
             _DATA_DIR + '/NAMEOFYOURFOLDER/analysis.json' 
     },
 ```
+## Seventh step:
+
+Create a configuration yaml: you can use one of the many configuration yamls as boilerplait, which can be found in "Detectron/configs/" (or use the one, we added here).
+The most important lines, which have to be adjusted are:
+NUM_CLASSES: the number of your classes plus one (beckground class)
+NUM_GPUS: the number of available GPUs
+TRAIN/DATASETS: the name of your train dataset, which you added to the dataset_catalog.py. It should look like that: ('NAMEOFYOURFOLDER_train',)
+TEST/DATASETS: same as TRAIN/DATASETS, only with the name of your test dataset in the dataset_catalog.py
+MAX_ITER: the amount of maximal iterations of the training algorithm. Wich number is the best to choos depents on a number of variables.
+OUTPUT_DIR: add here the folder where the results are to be safed.
+
+## Eighth step
+
+Start training within the Detectron folder with comand line:
+```
+python2 tools/train_net.py --cfg YOURCONFIG.yaml
+```
