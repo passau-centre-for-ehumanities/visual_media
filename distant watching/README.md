@@ -37,10 +37,10 @@ After creating the training corpus, you need to add them to the Detectron datase
         _ANN_FN: 
             _DATA_DIR + '/NAMEOFYOURFOLDER/val.json' 
     },
-    'NAMEOFYOURFOLDER_toast': { 
+    'NAMEOFYOURFOLDER_analysis': { 
         _IM_DIR: 
-            _DATA_DIR + '/NAMEOFYOURFOLDER/toast_images', 
+            _DATA_DIR + '/NAMEOFYOURFOLDER/analysis_images', 
         _ANN_FN: 
-            _DATA_DIR + '/NAMEOFYOURFOLDER/toast.json' 
+            _DATA_DIR + '/NAMEOFYOURFOLDER/analysis.json' 
     },
 ```
