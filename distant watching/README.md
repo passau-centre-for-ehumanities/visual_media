@@ -84,10 +84,12 @@ This algorithm requires, that you first extracted the frames from the videos and
 ./OUTPUTFOLDER/VIDEO2.mp4/000003019_0.png
 
 ./OUTPUTFOLDER/VIDEO2.mp4/000003019_1.png
-
-## Tenth step
+If you have images, use:
 ```
 python2 run_on_images.py --input /FOLDER/OF/YOUR/IMAGES --model-cfg ../YOUCONFIG.yaml --save-res=True
 ```
 --safe-res specifies, if the results are to be visualized or not.
 
+## Tenth step:
+
+for analyzation, proceed with [analyze.md](https://github.com/passau-centre-for-ehumanities/visual_media/blob/master/distant%20watching/analyze.md)
