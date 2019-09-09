@@ -61,3 +61,33 @@ Start training within the Detectron folder with comand line:
 ```
 python2 tools/train_net.py --cfg YOURCONFIG.yaml
 ```
+## Ninth step 
+After producing a model, you can it apply with this commands on your corpus:
+
+In case you have a video corpus, use this python script:
+```
+run_on_frames.py --video_folder "FOLDERS/OF/VIDEOFRAMEFOLDERS" --model-cfg YOURCONFIG.yaml --outputdir FOLDER/OF/VIDEOOUTPUTFOLDERS --output YOUROUTPUTFILE.json
+
+```
+This algorithm requires, that you first extracted the frames from the videos and saved all video frames of a video in one folder:
+
+./OUTPUTFOLDER/VIDEO1.mp4/000000001.jpg
+
+./OUTPUTFOLDER/VIDEO1.mp4/000000002.jpg
+
+./OUTPUTFOLDER/VIDEO1.mp4/000000003.jpg
+
+:
+
+./OUTPUTFOLDER/VIDEO2.mp4/000002532_0.png
+
+./OUTPUTFOLDER/VIDEO2.mp4/000003019_0.png
+
+./OUTPUTFOLDER/VIDEO2.mp4/000003019_1.png
+
+## Tenth step
+```
+python2 run_on_images.py --input /FOLDER/OF/YOUR/IMAGES --model-cfg ../YOUCONFIG.yaml --save-res=True
+```
+--safe-res specifies, if the results are to be visualized or not.
+
