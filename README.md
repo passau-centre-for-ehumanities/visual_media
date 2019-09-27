@@ -11,8 +11,7 @@ In this Repositorium, you can find:
 * Visualising dominant colors in a picture (sample notebook [here](colours/ColourRun.ipynb))
 * Using [Detectron](https://github.com/facebookresearch/Detectron)'s object recognition on book illustrations
 * Experimenting with [PixPlot](https://github.com/YaleDHLab/pix-plot/) visualisations (fork with added functionality [here](https://github.com/passau-centre-for-ehumanities/pix-plot)
-Comming soon:
-* A walk through how to do facial Analysis.
-* A walk through how to do posture Analysis.
+* A walk through how to do [facial Analysis](https://github.com/passau-centre-for-ehumanities/visual_media/tree/master/faces).
+* A walk through how to do [posture Analysis]().
 
 The Passau Center for eHumanities was financed by the BMBF.
