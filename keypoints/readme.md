@@ -11,5 +11,8 @@ Start the extract_keypoints.py in the Detectron/detectron-folder with the follow
 --save-res: bolean, which specifies, if the keypoint-detection-results should be visualized. If =True, a folder is created, coposed of the name of the used config-yaml and the analysed folder. If you want to use more then one keypoint-detection net, you can modify the "batch_keypoint_detection.sh" to automate the process.
 The algorithm produces a pickled file named after the folder, which was analyzed and the config-yaml.
 
-### third step
-If you have more
+## third step:
+If you have more then one keypoint-detection result, you can combine the results with join_kps_detectron.py
+you need to put all the results in one folder and put the name of the folder in line 53 (keypointfolder). you also need to modify the variable in line 50. put here the folder of your visual corpus.
+
+## Fourth step:
