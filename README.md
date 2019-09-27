@@ -14,3 +14,5 @@ In this Repositorium, you can find:
 Comming soon:
 * A walk through how to do facial Analysis.
 * A walk through how to do posture Analysis.
+
+The Passau Center for eHumanities was financed by the BMBF.
