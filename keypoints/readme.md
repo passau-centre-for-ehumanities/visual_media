@@ -16,3 +16,4 @@ If you have more then one keypoint-detection result, you can combine the results
 you need to put all the results in one folder and put the name of the folder in line 53 (keypointfolder). you also need to modify the variable in line 50. put here the folder of your visual corpus.
 
 ## Fourth step:
+visualize_kps.py is used to visualize the results. Lines 14-43 are used to enrich the keypoint-data with metadata and the rest of the script depends on this metadata. As this is always depending on the data, one project has, you probably have to rewrite the script acording to your needs.
